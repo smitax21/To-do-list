@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo's List</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <p id="right"><a href="https://www.linkedin.com/in/smitax21/" target="blank">Coded by Smita</a></p>
+        <p id="left"><a href="https://github.com/smitax21/To-do-list" target="blank">Link to the source code</a></p>
+
+        <div class="box">
+            <h1>To-do's list</h1>
+
+            <div class="input-group mb-3">
+                <input type="text" id="textBox" class="form-control" placeholder="enter an item to do" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter an item to do'" />
+                <div class="input-group-append">
+                    <button id="enterBtn" class="btn btn-outline-dark" type="button">Enter</button>
+                </div>
+            </div>
+
+            <ul id="ul">
+                <!-- Start of the List Items, checkBox and Delete Button -->
+                <li class="li">
+                    <input type="checkbox" class="checkBox" name="" /> Buy food for Siboo <button class="deleteBtn"><i class="fa fa-trash"></i></button>
+                </li>
+                <li class="li">
+                    <input type="checkbox" class="checkBox" name="" /> Get a new controller <button class="deleteBtn"><i class="fa fa-trash"></i></button>
+                </li>
+                <li class="li">
+                    <input type="checkbox" class="checkBox" name="" /> Finish the to-do list <button class="deleteBtn"><i class="fa fa-trash"></i></button>
+                </li>
+                <li class="li">
+                    <input type="checkbox" class="checkBox" name="" /> Drink enough water <button class="deleteBtn"><i class="fa fa-trash"></i></button>
+                </li>
+            </ul>
+
+            <br />
+            <button id="deleteAllBtn"><i class="fa fa-trash"></i> Delete All Items</button>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
